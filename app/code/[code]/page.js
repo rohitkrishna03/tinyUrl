@@ -1,6 +1,6 @@
 
 // app/code/[code]/page.js
-import { query } from "../../lib/db";
+import { query } from "../../../lib/db";
 
 // Make sure this page is always rendered on the server at request time
 export const dynamic = "force-dynamic";
