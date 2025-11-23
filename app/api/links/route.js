@@ -1,3 +1,4 @@
+// app/api/links/route.js
 import { NextResponse } from "next/server";
 import { query } from "../../../lib/db";
 import { isValidCode, generateCode, validateUrl } from "../../../lib/utils";

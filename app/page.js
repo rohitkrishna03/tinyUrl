@@ -327,11 +327,18 @@ export default function DashboardPage() {
 
                     <td className="py-2 px-3 text-right">
                       <div className="flex gap-2 justify-end">
-                        <Link href={`/code/${link.code}`}>
+                        {/* <Link href={`/code/${link.code}`}>
                           <button className="px-2 py-1 border border-slate-600 rounded-md hover:bg-slate-700/60">
                             Stats
                           </button>
-                        </Link>
+                        </Link> */}
+                        <Link href={`/stats/${link.code}`}>
+  <button className="px-2 py-1 border border-slate-600 rounded-md hover:bg-slate-700/60">
+    Stats
+  </button>
+</Link>
+
+
 
                         <button
                           onClick={() => handleDelete(link.code)}
