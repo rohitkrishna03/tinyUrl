@@ -16,12 +16,7 @@ export async function GET(req, { params }) {
 
   const url = result.rows[0].url;
 
-  // 🚀 Correct: store UTC, convert on frontend only
-  // await query(
-  //   // "UPDATE links SET clicks = clicks + 1, last_clicked = NOW() WHERE code=$1",
-    
-  //   [code]
-  // );
+
   await query(
   "UPDATE links SET clicks = clicks + 1, last_clicked = NOW() AT TIME ZONE 'Asia/Kolkata' WHERE code=$1",
   [code]
